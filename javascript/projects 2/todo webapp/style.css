@@ -1,0 +1,8 @@
+.singleTodo{
+    display: flex;   
+    align-items: center;
+    text-align: center;
+}
+.completed{
+    text-decoration: line-through;
+}

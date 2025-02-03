@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, .main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    background-color: #c08383;
+}
+#emoji{
+    cursor: pointer;
+    font-size: 4em;
+    background-color: #fff;
+    height: 150px;
+    width: 250px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+}

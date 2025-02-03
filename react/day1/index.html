@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <h2>loading.........</h2>
+    </div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      // const h1=document.createElement('h1')
+      // h1.setAttribute('id','1')
+      // h1.innerHTML='hello'
+      // document.getElementById("main").prepend(h1)
+
+      // console.log(React)
+      // console.log(ReactDOM)
+      const h1 = React.createElement(
+        "h1",
+        {
+          key: "1",
+          className: "name",
+          style: { backgroundColor: "lightgreen", padding: "50px" },
+        },
+        "hello"
+      );
+      // console.log(h1)
+      const h2 = React.createElement(
+        "h1",
+        {
+          key: "2",
+          className: "name",
+          style: { backgroundColor: "lightgreen", padding: "50px" },
+        },
+        "hello"
+      );
+      const div = React.createElement("div", {}, [
+        h1,
+        h2,
+        React.createElement(
+          "h1",
+          {
+            key: "3",
+            className: "name",
+            style: { backgroundColor: "purple", padding: "50px" },
+          },
+          "hello"
+        ),
+      ]);
+      const root = ReactDOM.createRoot(document.getElementById("main"));
+      // console.log(root)
+      root.render(div);
+    </script>
+  </body>
+</html>

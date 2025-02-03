@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.secDiv{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    /* width: 50%;
+    height: 50%; */
+    background-color: rgb(153, 220, 187);
+    border-radius: 20px;
+}
+.secDivDisplay{
+    display: none;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.Follower{
+    width: 100%;
+    display: flex;
+    /* margin: 50px; */
+    justify-content:space-around;
+}
+.userFollow{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    text-align: center;
+}
+.userImg{
+    /* width:70%; */
+    border-radius: 50%;
+    margin: 10px;
+}
+.userName{
+    font-size:2em;
+}
+.userBio{
+    font-size: 20px;
+}
+.repo{
+    font-size: 2em;
+    margin: 10px;
+}
+.visitProfile{
+    font-size: 2em;
+    background-color: rgb(61, 70, 82);
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 30px;
+
+    color: white;
+}
+.firstDiv{
+    font-size: 2em;
+}
+#input{
+    width:300px;
+    height:40px;
+    font-size: 20px;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
